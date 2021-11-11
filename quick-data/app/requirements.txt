@@ -1,0 +1,6 @@
+requests
+starlette
+pydantic
+fastapi
+uvicorn
+kafka-python
