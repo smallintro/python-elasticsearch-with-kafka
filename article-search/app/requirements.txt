@@ -3,7 +3,7 @@ starlette
 pydantic
 fastapi
 uvicorn
-kafka-python
 urllib3
 certifi
+kafka-python
 elasticsearch

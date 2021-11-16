@@ -45,7 +45,7 @@ Alternatively we can download the tar.gz package from the Download page and run 
 ## 5. Start Elasticsearch server
 Elasticsearch is a distributed, real-time, search analysis platform.
 Elasticsearch can store data in json format, and hence can be used as NoSQL database.
-> elasticsearch-7.11.1/bin/elasticsearch
+> bin/elasticsearch.bat
 
 - index: An index is equivalent to database in relational database
 - mapping: A mapping is equivalent to schema in relational database
@@ -55,7 +55,7 @@ Elasticsearch can store data in json format, and hence can be used as NoSQL data
     > http://localhost:9200
 
     6.2 Index APIs
-        6.2.1 Create an index with name quick_data_index
+        6.2.1 Create an index with name articles
         > PUT http://localhost:9200/articles
     
         6.2.2 Query an index with name articles
