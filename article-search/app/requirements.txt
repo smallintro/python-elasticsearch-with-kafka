@@ -1,0 +1,9 @@
+requests
+starlette
+pydantic
+fastapi
+uvicorn
+urllib3
+certifi
+kafka-python
+elasticsearch
