@@ -1,6 +1,6 @@
-import service.elasticsearch_service as es
-import service.kafka_producer as kfk
-from model.data_model import ArticleInfo
+from elasticservice import es_service as es
+from kafkaservice import kafka_producer as kfk
+from appmodel.data_model import ArticleInfo
 
 
 def save_article_info(article: ArticleInfo):

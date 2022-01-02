@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from starlette import status
-import service.app_service as app_service
-from model.data_model import ArticleInfo, AppResponse
-from config.es_config import es_obj
+from appservice import app_service
+from appmodel.data_model import ArticleInfo, AppResponse
+from elasticservice.es_config import es_obj
 
 app_v1 = FastAPI()
 

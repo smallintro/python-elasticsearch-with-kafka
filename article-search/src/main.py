@@ -5,7 +5,7 @@ Created on 14-Nov-2021
 import logging
 import uvicorn
 import threading
-from service.kafka_consumer import consume_message
+from kafkaservice.kafka_consumer import consume_message
 
 
 def init_app():
@@ -20,4 +20,4 @@ def init_app():
 if __name__ == "__main__":
     init_app()
     # uvicorn article_api:app --port 8080 --reload
-    uvicorn.run("article_api:app_v1", host="127.0.0.1", port=8080, log_level="info")
+    uvicorn.run("api.article_api:app_v1", host="127.0.0.1", port=8080, log_level="info", reload=True)
