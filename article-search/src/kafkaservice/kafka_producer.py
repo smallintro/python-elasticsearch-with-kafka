@@ -1,5 +1,5 @@
 from kafka.errors import KafkaError
-import config.kafka_config as kfk
+from kafkaservice import kafka_config as kfk
 
 
 def on_send_success(record_metadata):

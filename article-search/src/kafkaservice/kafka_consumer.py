@@ -1,5 +1,5 @@
 from kafka.errors import KafkaError
-import config.kafka_config as kfk
+import kafkaservice.kafka_config as kfk
 
 
 def consume_str_message():

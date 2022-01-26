@@ -1,5 +1,5 @@
 import json
-from config.es_config import es_obj, default_index
+from elasticservice.es_config import es_obj, default_index
 
 
 def add_doc_to_index(document_data, index_name=default_index):

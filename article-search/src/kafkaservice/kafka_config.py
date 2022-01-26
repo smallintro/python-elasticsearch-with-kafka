@@ -2,7 +2,7 @@ from kafka import KafkaProducer
 from kafka import KafkaConsumer
 import json
 
-bootstrap_servers = ['localhost:9092']
+bootstrap_servers = ['Win11Home.localdomain:9092']
 default_topic = 'python-kafka-topic'
 group_id = 'kafka-group-id'
 
@@ -24,7 +24,8 @@ def init_kafka_consumer(topic_name=default_topic):
     _text_consumer = KafkaConsumer(topic_name, group_id=group_id, bootstrap_servers=bootstrap_servers)
     _consumer = KafkaConsumer(topic_name, group_id=group_id, bootstrap_servers=bootstrap_servers,
                               auto_offset_reset='earliest', enable_auto_commit=True,
-                              value_deserializer=lambda x: json.loads(x.decode('utf-8')))
+                              value_deserializer=lambda x: json.loads(x.decode('utf-8')),
+                              max_poll_interval_ms=1000000)
     print(f"init_kafka_consumer finished")
 
 
